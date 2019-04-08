@@ -4,13 +4,13 @@ import React, { Component } from 'react';
 class Keypad extends Component {
 
   handleClick(){
-    console.log("Entering Password...")
+    console.log("Entering password...")
   }
 
   render() {
     return (
       <div>
-        <input type="text" onclick={this.handleClick}></input>
+        <input type="password" onKeyUp={this.handleClick}/>
       </div>
     );
   }
